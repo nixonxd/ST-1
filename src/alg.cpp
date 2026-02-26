@@ -1,7 +1,7 @@
 // Copyright 2025 UNN-CS
-#include "alg.h"
 #include <cstdint>
 #include <math.h>
+#include "alg.h"
 
 bool checkPrime(uint64_t value) {
   if (value <= 1)
@@ -11,7 +11,7 @@ bool checkPrime(uint64_t value) {
   if (value % 2 == 0)
     return false;
 
-  uint64_t limit = (uint64_t)sqrt(value);
+  uint64_t limit = static_cast<uint64_t>(sqrt(value));
   for (uint64_t i = 3; i <= limit; i += 2) {
     if (value % i == 0)
       return false;

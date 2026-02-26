@@ -1,6 +1,6 @@
 // Copyright 2025 UNN-CS
-#include "alg.h"
 #include <cstdint>
+#include "alg.h"
 #include <gtest/gtest.h>
 
 TEST(checkPrimeTest, SmallNumbers) {
