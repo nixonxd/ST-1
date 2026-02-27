@@ -1,7 +1,6 @@
-// Copyright 2025 UNN-CS
+#include <gtest/gtest.h>
 #include <cstdint>
 #include "alg.h"
-#include <gtest/gtest.h>
 
 TEST(checkPrimeTest, SmallNumbers) {
   EXPECT_FALSE(checkPrime(0));
